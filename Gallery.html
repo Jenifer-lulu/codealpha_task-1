@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>My Image Gallery</h1>
+  <div class="gallery">
+    <img src="Taj.avif" alt="Image 1" onclick="openLightbox(this)">
+    <img src="Gate.jpg" alt="Image 2" onclick="openLightbox(this)">
+    <img src="Golden.webp" alt="Image 3" onclick="openLightbox(this)">
+    <img src="Dubai.jpg" alt="Image 4" onclick="openLightbox(this)">
+    <img src="pisa.png" alt="Image 5" onclick="openLightbox(this)">
+    <img src="41-christ-redeemer-getty.jpg" alt="Image 6" onclick="openLightbox(this)">
+    <img src="Singapore-banner.jpg" alt="Image 7" onclick="openLightbox(this)">
+    <img src="LotusDelhi.jpg" alt="Image 8" onclick="openLightbox(this)">
+    <img src="premium_photo-1661919589683-f11880119fb7.avif" alt="Image 9" onclick="openLightbox(this)">
+    <img src="GettyImages-612206162.webp" alt="Image 10" onclick="openLightbox(this)">
+  </div>
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" src="">
+    <div class="navigation">
+      <button onclick="prevImage()">&#10094;</button>
+      <button onclick="nextImage()">&#10095;</button>
+    </div>
+  <!-- Cover Page -->
+<div id="cover-page" class="cover-page">
+  <h1>Welcome to My Image Gallery</h1>
+  <button onclick="enterGallery()">Enter Gallery</button>
+</div>
+
+<!-- Gallery Section -->
+<div id="gallery-section" style="display:none;">
+  <!-- Your existing gallery code goes here -->
+</div>  
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
